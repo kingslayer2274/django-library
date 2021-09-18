@@ -1,0 +1,26 @@
+{%extends 'admindash/layouts/base-admin.html' %}
+
+{%block content%}
+
+<div class="container" style="margin-top: 6rem;">
+    <h1> Change Password </h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <table>
+            {{form}}
+
+        </table>
+
+
+
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="submit" href="#" value="CHange Password" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+
+</div>
+{%endblock%}

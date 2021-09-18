@@ -1,0 +1,23 @@
+{%extends 'sign/layouts/base.html'%}
+
+{% load crispy_forms_tags %}
+
+
+
+
+{%block top%}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <table>
+        {{form|crispy}}
+    </table>
+
+    <div class="form-group row text-center">
+        <div class="col-sm-10">
+            <input type="submit" class="submit-btn" value="Register">
+        </div>
+    </div>
+</form>
+
+{%endblock%}
